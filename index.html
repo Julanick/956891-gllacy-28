@@ -9,7 +9,7 @@
 <body>
   <header>
     <nav>
-      <a>
+      <a href="index.html">
         <img src="img/header/logo.svg" alt="Логотип магазина мороженого Глейси" width="154" height="64">
       </a>
       <ul>
@@ -45,21 +45,19 @@
     </nav>
     <div>
       <div>
-        <a href="#">
-        </a>
+        <a href="#"></a>
         <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <label for="search">Строка поиска</label>
+          <label for="search" class="visually-hidden">Строка поиска</label>
           <input type="search" name="search" id="search" placeholder="Что ищем?">
         </form>
       </div>
       <div>
-        <a href="#">
-          Вход </a>
+        <a href="#">Вход</a>
         <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <label for="email"></label>
+          <label for="email" class="visually-hidden"> Строка ввода почты</label>
           <input type="email" id="email" name="email" required>
-          <label for="password"></label>
-          <input type="password" id="password" name="password" placeholder="Пароль">
+          <label for="password" class="visually-hidden">Строка ввода пароля</label>
+          <input type="password" id="password" name="password" placeholder="Пароль" required>
           <button type="submit" value="Войти"> </button>>
           <a href="#"> Забыли пароль?</a>
           <a href="#"> Новая регистрация</a>
@@ -102,6 +100,7 @@
       </div>
     </section>
     <section>
+      <h2 class="visually-hidden">Акционное предложение</h2>
       <h3>Малинка даром!</h3>
       <p>
         При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ
@@ -110,6 +109,7 @@
       <a href="#">Хочу варенье!</a>
     </section>
     <section>
+      <h2 class="visually-hidden">Акционное предложение</h2>
       <h3>Шоколадки даром!</h3>
       <p>
         При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей
@@ -118,7 +118,7 @@
       <a href="#">Хочу шоколадки!</a>
     </section>
     <section>
-      <h2>Хиты продаж мороженого</h2>
+      <h2 class="visually-hidden">Хиты продаж мороженого</h2>
       <ul>
         <li>
           <div>
@@ -191,7 +191,7 @@
       </ul>
     </section>
     <section>
-      <h2>Реклама</h2>
+      <h2 class="visually-hidden">Реклама</h2>
       <article>
         <p>Новое в нашем блоге</p>
         <h3>10 способов сервировки фруктовых щербетов к столу</h3>
@@ -204,8 +204,8 @@
         самого вкусного, что у нас происходит. Обещаем не спамить и не слать
         всякой ненужной ерунды. Честно =)
       </p>
-      <form action="">
-        <input type="email" placeholder="email@example.com">
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <input type="email" placeholder="email@example.com" required>
         <button type="submit">Отправить</button>
       </form>
     </section>
@@ -213,7 +213,7 @@
       <h2 class="visually-hidden">Где мы находимся?</h2>
       <img src="https://via.placeholder.com/150x100" alt="Месторасположение магазина мороженного" width=" " height="">
       <div>
-        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <h2 class="visually-hidden">Наш адрес</h2>
         <p>Адрес главного офиса и офлайн-магазина:</p>
         <a>ул. Большая Конюшенная, 19/8, Санкт-Петербург
           <a>
@@ -259,9 +259,9 @@
         </li>
       </ul>
     </section>
-    <article>
+    <section>
       <h2 class="visually-hidden">Разработчик</h2>
-      <a href="">
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/footer/logo-academy.svg" alt="Логотип HTML Academy" width="108" height="39">
       </a>
       <p>
@@ -269,16 +269,17 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         © 2019
       </p>
-    </article>
+    </section>
   </footer>
   <form action="https://echo.htmlacademy.ru/courses" method="post">
+    <h2 class="visually-hidden"> Форма обратной связи </h2>
     <h3>Мы обязательно вам ответим!</h3>
-    <label for="name"></label>
-    <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-    <label for="email"></label>
-    <input type="email" id="email" name="email" placeholder="email@example.com">
-    <label for="text"></label>
-    <textarea id="text" name="text" rows="7" placeholder="В свободной форме"></textarea>
+    <label for="name" class="visually-hidden"> Строка ввода имени и фамилии</label>
+    <input type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+    <label for="email" class="visually-hidden">Строка ввода почты</label>
+    <input type="email" id="email" name="email" placeholder="email@example.com" required>
+    <label for="text" class="visually-hidden">Поле для заполнения дополнительной информации</label>
+    <textarea id="text" name="text" rows="7" placeholder="В свободной форме" required></textarea>
     <button type="submit">Отправить</button>
   </form>
 </body>

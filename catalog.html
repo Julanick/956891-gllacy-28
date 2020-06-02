@@ -9,61 +9,67 @@
 <body>
   <header>
     <nav>
-      <a>
+      <a href="index.html">
         <img src="img/header/logo.svg" alt="Логотип магазина мороженого Глейси" width="154" height="64" />
       </a>
       <ul>
         <li>
-          <a href="catalog.html">
-            Каталог
-            <ul>
-              <li>
-                <a href="#">Новинки</a>
-              </li>
-              <li>
-                <a href="#">Сливочное</a>
-              </li>
-              <li>
-                <a href="#">Щербеты</a>
-              </li>
-              <li>
-                <a href="#">Фруктовый лед</a>
-              </li>
-              <li>
-                <a href="#">Мелорин</a>
-              </li>
-            </ul>
-          </a>
+          <a href="catalog.html"></a>
+          Каталог
+          <ul>
+            <li>
+              <a href="#">Новинки</a>
+            </li>
+            <li>
+              <a href="#">Сливочное</a>
+            </li>
+            <li>
+              <a href="#">Щербеты</a>
+            </li>
+            <li>
+              <a href="#">Фруктовый лед</a>
+            </li>
+            <li>
+              <a href="#">Мелорин</a>
+            </li>
+          </ul>
         </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
     </nav>
-    <div>
-      <a href="#">
-      </a>
+
+    <section>
+      <h2 class="visually-hidden">Форма поиска</h2>
+      <a href="#"></a>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <label for="search">Строка поиска</label>
+        <label for="search" class="visually-hidden">Строка поиска</label>
         <input type="search" name="search" id="search" placeholder="Что ищем?" />
       </form>
-      <a href="#"> Вход
-      </a>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Форма входа</h2>
+      <a href="#"> Вход</a>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <label for="email"></label>
+        <label for="email" class="visually-hidden">Строка ввода почты</label>
         <input type="email" id="email" name="email" required />
-        <label for="password"></label>
-        <input type="password" id="password" name="password" placeholder="Пароль" />
+        <label for="password" class="visually-hidden"> Строка ввода пароля</label>
+        <input type="password" id="password" name="password" placeholder="Пароль" required />
         <div class="button">
           <input type="submit" value="Войти" />
         </div>
         <a href="#"> Забыли пароль? </a>
         <a href="#"> Новая регистрация </a>
       </form>
-      <a href="#">2 товара
+    </section>
+    <section>
+      <h2 class="visually-hidden">Форма для оформления заказа</h2>
+      <a href="#">2 товара</a>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
         <ul>
           <li>
             <h2 class="visually-hidden">Корзина с мороженым</h2>
-            <button><span class="visually-hidden">Удалить товар <span></button>
+            <button><span class="visually-hidden">Удалить товар </span></button>
             <a href="#">
               <img src="img/main/products/ic-orange.png" alt="Картинка мороженого пломбир с апкльсиновым джемом"
                 width="32" height="32" />
@@ -84,12 +90,12 @@
           </li>
         </ul>
         <span>Итого: 750 руб.</span>
-      </a>
-      <button type="submit">Оформить заказ</button>
-    </div>
+        <button type="submit">Оформить заказ</button>
+      </form>
+    </section>
     <div>
       <a href="index.html">Главная</a>
-      <a href="">Каталог</a>
+      <a href="catalog.html">Каталог</a>
       <a href="">Сливочное</a>
     </div>
     <div>
@@ -100,7 +106,8 @@
   <main>
     <h1>Cливочное мороженое</h1>
     <section>
-      <form action="">
+      <h2 class="visually-hidden">Форма дополнительных параметров</h2>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
         <fieldset>
           <legend>Сортировка</legend>
           <section>
@@ -278,13 +285,13 @@
     <section>
       <h2 class="visually-hidden">Документация</h2>
       <ul>
-        <li><a href="">Для поставщиков</a></li>
-        <li><a href="">Наши документы</a></li>
-        <li><a href="">О производстве</a></li>
-        <li><a href="">Экологические стандарты</a></li>
+        <li><a href="#">Для поставщиков</a></li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">О производстве</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
       </ul>
     </section>
-    <article>
+    <section>
       <h2 class="visually-hidden">Разработчик</h2>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/footer/logo-academy.svg" alt="Логотип HTML Academy" width="108" height="39" />
@@ -294,7 +301,7 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         © 2019
       </p>
-    </article>
+    </section>
   </footer>
 </body>
 
