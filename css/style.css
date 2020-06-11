@@ -23,6 +23,7 @@ body {
   background-image: url("../img/main/ic-raspberry.png");
   background-position: top center;
   background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 
 img {
@@ -35,10 +36,21 @@ a {
 }
 
 .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.popup {
   display: none;
 }
 
-.nav-item,
+.nav-inner-list,
 .nav-list,
 .advantages-list,
 .social-list,
@@ -54,7 +66,7 @@ a {
   color: var(--basic-white);
 }
 
-.nav-item a {
+.nav-inner-list a {
   font-size: 14px;
   line-height: 16px;
   color: var(--basic-сharcoal);
@@ -70,44 +82,61 @@ a {
 }
 
 .btn-search {
-  display:  inline-block;
+  display: flex;
   width: 32px;
   height: 32px;
   background-color: var(--gray-background);
   border-radius: 50%;
-}
-
-.btn-search svg {
   padding: 8px;
+  box-sizing: border-box;
+
 }
 
 .btn-login {
-  display:  inline-block;
+  display: flex;
   width: 92px;
   height: 32px;
   background-color: var(--gray-background);
   border-radius: 20px;
-}
-
-.btn-login svg {
-  margin: 6px 0px 7px 16px;
+  box-sizing: border-box;
+  padding: 6px 16px 7px 16px;;
 }
 
 .btn-login span {
-  margin:  8px 16px 8px 8px;
+  margin-left: 8px;
+  margin-top: 2px;
+
 }
 
-.btn-bag {
-  display:  inline-block;
+.btn-basket {
+  display: flex;
   width: 100px;
   height: 32px;
   background-color: var(--gray-background);
   border-radius: 20px;
+  box-sizing: border-box;
+  padding: 6px 16px 6px 16px;;
 }
 
-.btn-bag svg {
-  padding: 6px 16px;
+.btn-basket span {
+  margin-left: 8px;
+  margin-top: 2px;
 }
+
+.btn-basket-order{
+  display: flex;
+  width: 118px;
+  height: 32px;
+  background-color: var(--basic-white);
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 6px 16px 6px 16px;;
+}
+
+.btn-basket-order span{
+    margin-left: 7px;
+    margin-top: 3px;
+  }
 
 .advantages {
   background-image: url(../img/main/bg-wafer.jpg);
@@ -185,13 +214,14 @@ a {
 }
 
 .news {
-  display: inline-block;
   background-image: url(../img/main/bg-serving.jpg);
   background-color: var(--basic-white);
   background-repeat: no-repeat;
   border-radius: 16px;
   width: 560px;
   min-height: 220px;
+  box-sizing: border-box;
+  padding: 23px 20px;;
 }
 
 .news-item p {
@@ -199,7 +229,8 @@ a {
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-сharcoal);
-  margin: 23px 20px 15px 20px;
+  margin: 0;
+
 }
 
 .news-item h3 {
@@ -209,23 +240,29 @@ a {
   color: var(--basic-сharcoal);
   text-decoration: underline;
   width: 287px;
-  margin: 15px 20px 15px 20px;
+  margin: 15px 0;
 }
 
 .subscription {
   background-image: url(../img/main/bg-email.png);
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-color: var(--light-beige);
   width: 560px;
   min-height: 220px;
   border-radius: 16px;
+  box-sizing: border-box;
+  padding: 34px 26px 34px 22px;
 }
 
 .subscription p {
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-dark-gray);
-  padding: 34px 22px 0 26px;
+  margin: 0 0 47px 0;
+}
+
+.subscription-form{
+  display: flex;
 }
 
 .subscription-form input {
@@ -244,8 +281,7 @@ a {
   width: 368px;
 }
 
-button,
-.btn-view {
+.button {
   display: inline-block;
   color: var(--basic-white);
   font-weight: bold;
@@ -387,13 +423,6 @@ button,
   font-size: 14px;
   line-height: 16px;
   color: var(--basic-сharcoal);
-}
-
-.btn-basket {
-  padding: 6px 16px;
-  background-color: var(--basic-white);
-  border: none;
-  border-radius: 20px;
 }
 
 .path a {
