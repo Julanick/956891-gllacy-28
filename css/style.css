@@ -9,6 +9,12 @@
   --light-beige: #f8f7f4;
   --orange: #d07058;
   --gray-background: rgba(255, 255, 255, 0.2);
+  --brown: #301d1d;
+  --burgundy: #80182d;
+  --pink: #f0819b;
+  --brule: #d9b698;
+  --blue: #3414c4;
+  --light-blue: #b2cbf7;
 }
 
 body {
@@ -55,7 +61,10 @@ a {
 .advantages-list,
 .social-list,
 .documentation-list,
-.catalog-list {
+.catalog-list,
+.filters-list,
+.pagination-list,
+.slide-list {
   list-style: none;
 }
 
@@ -89,7 +98,6 @@ a {
   border-radius: 50%;
   padding: 8px;
   box-sizing: border-box;
-
 }
 
 .btn-login {
@@ -105,7 +113,6 @@ a {
 .btn-login span {
   margin-left: 8px;
   margin-top: 2px;
-
 }
 
 .btn-basket {
@@ -230,7 +237,6 @@ a {
   line-height: 22px;
   color: var(--basic-сharcoal);
   margin: 0;
-
 }
 
 .news-item h3 {
@@ -278,6 +284,7 @@ a {
   color: var(--basic-light-gray);
   padding: 15px 14px;
   width: 368px;
+  box-sizing: border-box;
 }
 
 .button {
@@ -370,50 +377,62 @@ a {
 
 .catalog-item-orange {
   background-image: url(../img/main/products/ic-orange.png);
+  background-color: var(--beige);
 }
 
 .catalog-item-coffee {
   background-image: url(../img/main/products/ic-coffee.png);
+  background-color: var(--brown);
 }
 
 .catalog-item-strawberry {
   background-image: url(../img/main/products/ic-strawberry.png);
+  background-color: var(--pink);
 }
 
 .catalog-item-brulee {
   background-image: url(../img/main/products/ic-brulee.png);
+  background-color: var(--brule);
 }
 
 .catalog-item-lingonberry {
   background-image: url(../img/main/products/ic-lingonberry.png);
+  background-color: var(--burgundy);
 }
 
 .catalog-item-blueberries {
   background-image: url(../img/main/products/ic-blueberries.png);
+  background-color: var(--blue);
 }
 
 .catalog-item-lemon {
   background-image: url(../img/main/products/ic-lemon.png);
+  background-color: var(--beige);
 }
 
 .catalog-item-chocolate {
   background-image: url(../img/main/products/ic-chocolate.png);
+  background-color: var(--light-blue);
 }
 
 .catalog-item-vanilla {
   background-image: url(../img/main/products/ic-vanilla.png);
+  background-color: var(--light-beige);
 }
 
 .catalog-item-menthol {
   background-image: url(../img/main/products/ic-menthol.png);
+  background-color: var(--light-blue);
 }
 
 .catalog-item-blackchocolate {
   background-image: url(../img/main/products/ic-blackchocolate.png);
+  background-color: var(--brown);
 }
 
 .catalog-item-mint {
   background-image: url(../img/main/products/ic-mint.png);
+  background-color: var(--light-blue);
 }
 
 .order span {
@@ -463,7 +482,7 @@ a {
   width: 61px;
 }
 
-.path-raquo::after {
+.path-item::after {
   content: "";
   position: absolute;
   margin: 9px;
@@ -472,3 +491,201 @@ a {
   background-image: url("../img/header/raquo.png");
   background-repeat: no-repeat;
 }
+
+.main-slide-item h3 {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+  color: var(--basic-white);
+}
+
+.btn-double-order {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--basic-white);
+  padding: 10px 40px;
+}
+
+.special h3 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  color: var(--basic-white);
+}
+
+.special p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.btn-special {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 15px 22px;
+}
+
+.special-rasp {
+  background-image: url(../img/main/bg-raspberry.jpg);
+  background-color: var(--burgundy);
+  background-repeat: round;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 16px;
+  width: 560px;
+  min-height: 229px;
+}
+
+.special-chocolate {
+  background-image: url(../img/main/bg-chocolate.jpg);
+  background-color: var(--brown);
+  background-repeat: round;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 16px;
+  width: 560px;
+  min-height: 229px;
+}
+
+.catalog-item-hit {
+  background-image: url(../img/main/products/hit/hit.png);
+  background-color: var(--basic-white);
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 50%;
+  width: 61px;
+  height: 61px;
+}
+
+.contact {
+  background-image: url(../img/main/map.jpg);
+  background-color: var(--gray);
+  background-repeat: no-repeat;
+  min-height: 430px;
+  width: 1200px;
+}
+
+.contact-info {
+  background-color: var(--basic-white);
+  background-repeat: no-repeat;
+  width: 303px;
+  height: 306px;
+  border-radius: 16px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--basic-сharcoal);
+}
+
+.contact-info a {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-сharcoal);
+}
+
+.btn-contact {
+  padding: 13px 28px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.filters legend {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-white);
+}
+
+.filters-parameter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.btn-filters {
+  display: flex;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-color: var(--basic-white);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 14px 29px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.pagination-item a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: inherit;
+}
+
+.pagination-item {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  justify-content: center;
+  color: var(--basic-white);
+}
+
+.pagination-item:hover {
+  background-color: var(--basic-white);
+  color: black;
+}
+
+.pagination-list {
+  display: flex;
+  position: relative;
+}
+
+.pagination-item-previous a::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/main/previous-page.png");
+  background-repeat: no-repeat;
+  width: 7px;
+  height: 12px;
+  margin-left: -15px;
+  margin-top: 7px;
+}
+
+.pagination-item-next a::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/main/next-page.png");
+  background-repeat: no-repeat;
+  width: 7px;
+  height: 12px;
+  margin: 7px;
+}
+
+.slide-list{
+  display: flex;
+}
+
+.slide-item {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: var(--basic-white);
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.slide-item:hover {
+  background-color: var(--basic-white);
+}
+

@@ -116,6 +116,7 @@
         <button class="button" type="submit">Оформить заказ</button>
       </form>
     </section>
+
     <section class="schedule">
       <h2 class="visually-hidden">Режим работы</h2>
       <p>С 10 до 20, ежедневно</p>
@@ -124,21 +125,21 @@
   </header>
   <main>
     <div class="path">
-      <a class="path-raquo" href="index.html">Главная</a>
-      <a class="path-raquo" href="catalog.html">Каталог</a>
+      <a class="path-item" href="index.html">Главная</a>
+      <a class="path-item" href="catalog.html">Каталог</a>
       <a href="">Сливочное</a>
     </div>
     <h1 class="main-title">Cливочное мороженое</h1>
-    <section>
+    <section class="filters">
       <h2 class="visually-hidden">Форма дополнительных параметров</h2>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
         <fieldset>
           <legend>Сортировка</legend>
           <section>
-            <option>по популярности</option>
-            <option>сначала недорогие</option>
-            <option>сначала дорогие</option>
-            <option>по жирности</option>
+            <option class="filters-parameter">по популярности</option>
+            <option class="filters-parameter">сначала недорогие</option>
+            <option class="filters-parameter">сначала дорогие</option>
+            <option class="filters-parameter">по жирности</option>
           </section>
         </fieldset>
         <fieldset>
@@ -148,51 +149,51 @@
         </fieldset>
         <fieldset>
           <legend>Жирность</legend>
-          <ul>
+          <ul class="filters-list">
             <li>
               <input type="radio" name="fat" id="nofat" />
-              <label for="nofat">0%</label>
+              <label class="filters-parameter" for="nofat">0%</label>
             </li>
             <li>
               <input type="radio" name="fat" id="light" />
-              <label for="light">до 10%</label>
+              <label class="filters-parameter" for="light">до 10%</label>
             </li>
             <li>
               <input type="radio" name="fat" id="medium" />
-              <label for="medium">до 30%</label>
+              <label class="filters-parameter" for="medium">до 30%</label>
             </li>
             <li>
               <input type="radio" name="fat" id="hight" />
-              <label for="hight">выше 30%</label>
+              <label class="filters-parameter" for="hight">выше 30%</label>
             </li>
           </ul>
         </fieldset>
         <fieldset>
           <legend>Наполнители:</legend>
-          <ul>
+          <ul class="filters-list">
             <li>
               <input type="checkbox" name="name" id="chocolate" />
-              <label for="chocolate">шоколадные</label>
+              <label class="filters-parameter" for="chocolate">шоколадные</label>
             </li>
             <li>
               <input type="checkbox" name="name" id="sugar" />
-              <label for="sugar">сахарные присыпки</label>
+              <label class="filters-parameter" for="sugar">сахарные присыпки</label>
             </li>
             <li>
               <input type="checkbox" name="name" id="fruits" />
-              <label for="fruits">фрукты</label>
+              <label class="filters-parameter" for="fruits">фрукты</label>
             </li>
             <li>
               <input type="checkbox" name="name" id="syrup" />
-              <label for="syrup">сиропы</label>
+              <label class="filters-parameter" for="syrup">сиропы</label>
             </li>
             <li>
               <input type="checkbox" name="name" id="jams" />
-              <label for="jams">джемы</label>
+              <label class="filters-parameter" for="jams">джемы</label>
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Применить</button>
+        <button class="btn-filters" type="submit">Применить</button>
       </form>
     </section>
 
@@ -286,15 +287,15 @@
       </ul>
     </section>
 
-    <div>
-      <ul>
-        <li><a href="#">Назад</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">Вперед</a></li>
+    <div class="pagination">
+      <ul class="pagination-list">
+        <li class="pagination-item-previous"><a href="#"></a></li>
+        <li class="pagination-item"><a href="#">1</a></li>
+        <li class="pagination-item"><a href="#">2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item"><a href="#">4</a></li>
+        <li class="pagination-item"><a href="#">5</a></li>
+        <li class="pagination-item-next"><a href="#"></a></li>
       </ul>
     </div>
 
