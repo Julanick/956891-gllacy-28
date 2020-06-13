@@ -99,7 +99,7 @@ a {
   background-color: var(--gray-background);
   border-radius: 20px;
   box-sizing: border-box;
-  padding: 6px 16px 7px 16px;;
+  padding: 6px 16px 7px 16px;
 }
 
 .btn-login span {
@@ -115,7 +115,7 @@ a {
   background-color: var(--gray-background);
   border-radius: 20px;
   box-sizing: border-box;
-  padding: 6px 16px 6px 16px;;
+  padding: 6px 16px 6px 16px;
 }
 
 .btn-basket span {
@@ -123,20 +123,20 @@ a {
   margin-top: 2px;
 }
 
-.btn-basket-order{
+.btn-basket-order {
   display: flex;
   width: 118px;
   height: 32px;
   background-color: var(--basic-white);
   border-radius: 20px;
   box-sizing: border-box;
-  padding: 6px 16px 6px 16px;;
+  padding: 6px 16px 6px 16px;
 }
 
-.btn-basket-order span{
-    margin-left: 7px;
-    margin-top: 3px;
-  }
+.btn-basket-order span {
+  margin-left: 7px;
+  margin-top: 3px;
+}
 
 .advantages {
   background-image: url(../img/main/bg-wafer.jpg);
@@ -221,7 +221,7 @@ a {
   width: 560px;
   min-height: 220px;
   box-sizing: border-box;
-  padding: 23px 20px;;
+  padding: 23px 20px;
 }
 
 .news-item p {
@@ -261,12 +261,11 @@ a {
   margin: 0 0 47px 0;
 }
 
-.subscription-form{
+.subscription-form {
   display: flex;
 }
 
 .subscription-form input {
-  display: inline-block;
   font: inherit;
   background-color: var(--basic-white);
   border-width: 1px;
@@ -282,7 +281,6 @@ a {
 }
 
 .button {
-  display: inline-block;
   color: var(--basic-white);
   font-weight: bold;
   font-size: 18px;
@@ -425,10 +423,15 @@ a {
   color: var(--basic-сharcoal);
 }
 
+.path {
+  position: relative;
+}
+
 .path a {
   font-size: 14px;
   line-height: 16px;
   color: var(--basic-white);
+  padding-right: 22px;
 }
 
 .schedule p {
@@ -458,4 +461,14 @@ a {
   color: var(--basic-white);
   border-radius: 26px;
   width: 61px;
+}
+
+.path-raquo::after {
+  content: "";
+  position: absolute;
+  margin: 9px;
+  width: 6px;
+  height: 6px;
+  background-image: url("../img/header/raquo.png");
+  background-repeat: no-repeat;
 }
