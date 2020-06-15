@@ -64,7 +64,7 @@ a {
 .catalog-list,
 .filters-list,
 .pagination-list,
-.slide-list {
+.slide-button {
   list-style: none;
 }
 
@@ -569,7 +569,6 @@ a {
 
 .contact-info {
   background-color: var(--basic-white);
-  background-repeat: no-repeat;
   width: 303px;
   height: 306px;
   border-radius: 16px;
@@ -610,7 +609,6 @@ a {
 }
 
 .btn-filters {
-  display: flex;
   box-sizing: border-box;
   border: 2px solid;
   border-color: var(--basic-white);
@@ -653,7 +651,7 @@ a {
 .pagination-item-previous a::before {
   content: "";
   position: absolute;
-  background-image: url("../img/main/previous-page.png");
+  background-image: url("../img/main/previous-page.svg");
   background-repeat: no-repeat;
   width: 7px;
   height: 12px;
@@ -664,28 +662,30 @@ a {
 .pagination-item-next a::after {
   content: "";
   position: absolute;
-  background-image: url("../img/main/next-page.png");
+  background-image: url("../img/main/next-page.svg");
   background-repeat: no-repeat;
   width: 7px;
   height: 12px;
   margin: 7px;
 }
 
-.slide-list{
+.slide-buttons {
   display: flex;
 }
 
-.slide-item {
+.slide-button {
+  margin-right: 8px;
+}
+
+.btn-slide {
   width: 21px;
   height: 21px;
   border-radius: 50%;
   border: 3px solid;
   border-color: var(--basic-white);
   cursor: pointer;
-  margin-left: 8px;
 }
 
-.slide-item:hover {
+.btn-slide:hover {
   background-color: var(--basic-white);
 }
-
