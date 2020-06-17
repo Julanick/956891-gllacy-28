@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8" />
@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-  <header class="main-header">
+<body class="page-body">
+  <header class="main-header container">
     <nav class="main-nav">
       <a class="main-logo" href="index.html" >
         <img src="img/header/logo.svg" alt="Логотип магазина мороженого Глейси" width="154" height="64">
@@ -18,7 +18,7 @@
       <ul class="nav-list">
         <li>
           <a class="btn-catalog" href="catalog.html"> Каталог</a>
-          <ul class="nav-inner-list">
+          <ul class="nav-inner-list visually-hidden">
             <li>
               <a href="#">Новинки</a>
             </li>
@@ -44,6 +44,7 @@
         </li>
       </ul>
     </nav>
+    <div class="user-button">
     <section class="form-search">
       <h2 class="visually-hidden">Форма поиска</h2>
       <a class="btn-search" href="#">
@@ -88,6 +89,7 @@
           </svg>
         <span>2 товара</span>
       </a>
+      </div>
       <form class="popup" action="https://echo.htmlacademy.ru/courses" method="post">
         <h2 class="visually-hidden">Корзина с мороженым</h2>
         <ul>
@@ -117,17 +119,20 @@
       </form>
     </section>
 
+  </header>
+  <main>
+    <div class="shop-info container">
+      <div class="path">
+        <a class="path-item" href="index.html">Главная</a>
+        <a class="path-item" href="catalog.html">Каталог</a>
+        <a href="">Сливочное</a>
+      </div>
     <section class="schedule">
       <h2 class="visually-hidden">Режим работы</h2>
       <p>С 10 до 20, ежедневно</p>
       <a href="tel:88124502525">8 812 450-25-25</a>
     </section>
-  </header>
-  <main>
-    <div class="path">
-      <a class="path-item" href="index.html">Главная</a>
-      <a class="path-item" href="catalog.html">Каталог</a>
-      <a href="">Сливочное</a>
+
     </div>
     <h1 class="main-title">Cливочное мороженое</h1>
     <section class="filters">
@@ -197,12 +202,12 @@
       </form>
     </section>
 
-    <section class="catalog">
+    <section class="catalog container">
       <h2 class="visually-hidden">Каталог сливочного мороженого</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
           <div class="catalog-item-ice catalog-item-orange">
-            <p>310 &#8381; <span>/кг</span></p>
+            <p class="catalog-">310 &#8381; <span>/кг</span></p>
           </div>
           <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
           <a class="button" href="#" >Быстрый просмотр</a>
@@ -300,7 +305,7 @@
     </div>
 
   </main>
-  <footer>
+  <footer class="container footer">
     <section class="social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-list">
@@ -373,7 +378,7 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/footer/logo-academy.svg" alt="Логотип HTML Academy" width="108" height="39">
       </a>
-      <p>
+      <p class="development-title">
         Сделано в
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         © 2019

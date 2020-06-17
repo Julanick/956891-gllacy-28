@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-  <header class="main-header">
+<body class="page-body">
+  <header class="main-header container">
     <nav class="main-nav">
       <a class="main-logo" href="index.html" >
         <img src="img/header/logo.svg" alt="Логотип магазина мороженого Глейси" width="154" height="64">
@@ -18,8 +18,8 @@
       <ul class="nav-list">
         <li>
           <a href="catalog.html"> Каталог</a>
-          <ul class="nav-inner-list">
-            <li>
+          <ul class="nav-inner-list visually-hidden">
+            <li >
               <a href="#">Новинки</a>
             </li>
             <li>
@@ -44,6 +44,7 @@
         </li>
       </ul>
     </nav>
+    <div class="user-button">
     <section class="form-search">
       <h2 class="visually-hidden">Форма поиска</h2>
       <a class="btn-search" href="#">
@@ -92,16 +93,16 @@
         <span>Пусто</span>
       </a>
     </section>
+    </div>
+
+  </header>
+
+  <main>
     <section class="schedule">
       <h2 class="visually-hidden">Режим работы</h2>
       <p>С 10 до 20, ежедневно</p>
       <a href="tel:88124502525">8 812 450-25-25</a>
     </section>
-
-  </header>
-
-  <main>
-
     <section>
       <h2 class="visually-hidden">Самое популярное мороженое</h2>
       <div class="main-slide">
@@ -188,7 +189,7 @@
       </ul>
     </section>
 
-    <section class="advantages">
+    <section class="advantages container">
       <h2 id="company">
         Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого
         собственного проиводства на развес
@@ -216,7 +217,7 @@
         </li>
       </ul>
     </section>
-
+<div class="container info-sections">
     <section class="news">
       <h2 class="visually-hidden">Реклама</h2>
       <article class="news-item">
@@ -237,6 +238,7 @@
         <button class="button" type="submit">Отправить</button>
       </form>
     </section>
+  </div>
 
     <section class="contact">
       <h2 class="visually-hidden">Где мы находимся?</h2>
@@ -252,8 +254,8 @@
       </div>
     </section>
   </main>
-  <footer>
 
+  <footer class="container footer">
     <section class="social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social-list">
@@ -303,7 +305,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="documentation">
       <h2 class="visually-hidden">Документация</h2>
       <ul class="documentation-list">
         <li>
@@ -326,7 +328,7 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/footer/logo-academy.svg" alt="Логотип HTML Academy" width="108" height="39">
       </a>
-      <p>
+      <p class="development-title">
         Сделано в
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         © 2019

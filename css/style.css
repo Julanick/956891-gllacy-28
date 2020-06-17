@@ -152,6 +152,8 @@ a {
   background-position: 0 0;
   border-radius: 16px;
   min-height: 306px;
+  width: 1146px;
+  padding: 24px 20px;
 }
 
 .advantages h2 {
@@ -159,6 +161,17 @@ a {
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-сharcoal);
+  width: 995px;
+  margin: 0;
+}
+
+.advantages-list{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item {
@@ -170,6 +183,7 @@ a {
   padding-left: 56px;
   padding-top: 12px;
   margin-top: 10px;
+  width: 43%;
 }
 
 .ice::before {
@@ -223,7 +237,7 @@ a {
 .news {
   background-image: url(../img/main/bg-serving.jpg);
   background-color: var(--basic-white);
-  background-repeat: no-repeat;
+  background-repeat: round;
   border-radius: 16px;
   width: 560px;
   min-height: 220px;
@@ -688,4 +702,102 @@ a {
 
 .btn-slide:hover {
   background-color: var(--basic-white);
+}
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1146px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 27px;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list {
+  padding: 0;
+  margin-left: 24px;
+  display: flex;
+  width: 357px;
+  justify-content: space-between;
+}
+
+.user-button {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 245px;
+  justify-content: space-between;
+}
+
+.info-sections{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 1186px;
+}
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 170px;
+  justify-content: space-between;
+}
+
+.documentation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 330px;
+  justify-content: space-between;
+}
+
+.documentation-list li{
+  width: 165px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.development-title{
+  margin: 0;
+}
+
+.shop-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.catalog-item{
+  width: 267px;
+  text-align: center;
 }
