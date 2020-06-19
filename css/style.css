@@ -52,7 +52,7 @@ a {
   overflow: hidden;
 }
 
-.popup {
+.popup, .sub-menu {
   display: none;
 }
 
@@ -741,10 +741,8 @@ a {
   justify-content: space-between;
 }
 
-.user-button {
+.user-menu {
   display: flex;
-  margin: 0;
-  padding: 0;
   width: 245px;
   justify-content: space-between;
 }
