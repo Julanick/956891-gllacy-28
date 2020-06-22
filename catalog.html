@@ -18,7 +18,7 @@
       <ul class="nav-list">
         <li>
           <a class="btn-catalog" href="catalog.html"> Каталог</a>
-          <ul class="nav-inner-list sub-menu">
+          <ul class="nav-inner-list">
             <li>
               <a href="#">Новинки</a>
             </li>
@@ -132,29 +132,28 @@
       <p>С 10 до 20, ежедневно</p>
       <a href="tel:88124502525">8 812 450-25-25</a>
     </section>
-
     </div>
-    <h1 class="main-title">Cливочное мороженое</h1>
-    <section class="filters">
+    <section class="container">
+      <h1 class="main-title">Cливочное мороженое</h1>
       <h2 class="visually-hidden">Форма дополнительных параметров</h2>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <form class="filters" action="https://echo.htmlacademy.ru/courses" method="post">
         <fieldset>
-          <legend>Сортировка</legend>
-          <section>
+          <legend class="filters-sort">Сортировка</legend>
+          <section class="filters-parameters">
             <option class="filters-parameter">по популярности</option>
             <option class="filters-parameter">сначала недорогие</option>
             <option class="filters-parameter">сначала дорогие</option>
             <option class="filters-parameter">по жирности</option>
           </section>
         </fieldset>
-        <fieldset>
+        <fieldset class="filters-price">
           <legend>
             <span>Цена: 100 &#8381; - 500 &#8381;</span>
           </legend>
         </fieldset>
         <fieldset>
-          <legend>Жирность</legend>
-          <ul class="filters-list">
+          <legend class="filters-fat">Жирность</legend>
+          <ul class="filters-fat-list">
             <li>
               <input type="radio" name="fat" id="nofat" />
               <label class="filters-parameter" for="nofat">0%</label>
@@ -174,8 +173,8 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Наполнители:</legend>
-          <ul class="filters-list">
+          <legend class="filters-type">Наполнители:</legend>
+          <ul class="filters-type-list">
             <li>
               <input type="checkbox" name="name" id="chocolate" />
               <label class="filters-parameter" for="chocolate">шоколадные</label>
@@ -292,7 +291,7 @@
       </ul>
     </section>
 
-    <div class="pagination">
+    <div class="pagination container">
       <ul class="pagination-list">
         <li class="pagination-item-previous"><a href="#"></a></li>
         <li class="pagination-item"><a href="#">1</a></li>
