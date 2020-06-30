@@ -51,14 +51,6 @@ a {
   overflow: hidden;
 }
 
-.login-form,
-.form-login,
-.form-order,
-.search-form,
-.feedback-form {
-  display: none;
-}
-
 .nav-inner-list {
   padding: 0 0 10px 0;
   display: none;
@@ -241,7 +233,7 @@ a {
   background-color: var(--basic-white);
 }
 
-.btn-search:hover svg path {
+.btn-search:hover path {
   fill: var(--basic-сharcoal);
 }
 
@@ -273,7 +265,7 @@ a {
   color: var(--basic-сharcoal);
 }
 
-.btn-login:hover svg path {
+.btn-login:hover path {
   fill: var(--basic-сharcoal);
 }
 
@@ -1158,6 +1150,7 @@ a {
 }
 
 .search-form {
+  display: none;
   margin: 7px -310px;
   padding: 20px 15px;
   position: absolute;
@@ -1179,6 +1172,7 @@ a {
 }
 
 .login-form {
+  display: none;
   flex-direction: column;
   position: absolute;
   margin: 40px -190px;
