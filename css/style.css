@@ -51,7 +51,11 @@ a {
   overflow: hidden;
 }
 
-.popup {
+.login-form,
+.form-login,
+.form-order,
+.search-form,
+.feedback-form {
   display: none;
 }
 
@@ -93,7 +97,7 @@ a {
   display: flex;
 }
 
-.form-order-basket{
+.form-order-basket {
   padding: 15px 0 15px 0;
 }
 
@@ -114,7 +118,7 @@ a {
   color: var(--basic-сharcoal);
 }
 
-.nav-inner-list:first-child {
+.nav-item-new {
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
@@ -175,7 +179,7 @@ a {
   list-style: none;
 }
 
-.nav-list > li > a {
+.nav-list-item {
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
@@ -228,7 +232,6 @@ a {
   background-color: var(--gray-background);
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../img/header/search.svg);
   border-radius: 50%;
   padding: 8px;
   box-sizing: border-box;
@@ -236,8 +239,10 @@ a {
 
 .btn-search:hover {
   background-color: var(--basic-white);
-  color: black;
-  background-image: url(../img/header/search-black.svg);
+}
+
+.btn-search:hover svg path {
+  fill: var(--basic-сharcoal);
 }
 
 .btn-login {
@@ -265,11 +270,11 @@ a {
 
 .btn-login:hover {
   background-color: var(--basic-white);
-  color: black;
+  color: var(--basic-сharcoal);
 }
 
-.svg {
-fill: black;
+.btn-login:hover svg path {
+  fill: var(--basic-сharcoal);
 }
 
 .btn-basket {
@@ -312,7 +317,6 @@ fill: black;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 16px;
   line-height: 16px;
 }
 
@@ -450,7 +454,7 @@ fill: black;
   margin-bottom: 0;
 }
 
-.advantages-list div {
+.advantages-item-icon {
   margin-right: 6px;
 }
 
