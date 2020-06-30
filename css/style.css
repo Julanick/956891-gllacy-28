@@ -256,10 +256,9 @@ a {
   margin-left: 8px;
 }
 
-.btn-login-img {
+.btn-login svg {
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../img/header/entry.svg);
   width: 20px;
   height: 19px;
 }
@@ -269,8 +268,8 @@ a {
   color: black;
 }
 
-.btn-login:hover .btn-login-img {
-  background-image: url(../img/header/entry-black.svg);
+.svg {
+fill: black;
 }
 
 .btn-basket {
@@ -712,7 +711,7 @@ a {
 }
 
 .order {
-  padding: 0 0 15px 0;
+  padding: 15px 0 15px 0;
 }
 
 .order span {
@@ -1082,6 +1081,7 @@ a {
 .user-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .form-search {
@@ -1154,7 +1154,7 @@ a {
 }
 
 .search-form {
-  margin: 30px -320px;
+  margin: 7px -310px;
   padding: 20px 15px;
   position: absolute;
   background-color: var(--light-beige);
