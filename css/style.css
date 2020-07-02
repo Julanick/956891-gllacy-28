@@ -31,6 +31,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-white);
+  background-color: var(--basic-green);
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: top center;
@@ -172,13 +173,12 @@ a {
   display: flex;
 }
 
-.filters-parameters {
-  display: none;
-  width: 196px;
-}
-
 .filters-sort:hover + .filters-parameters {
   display: block;
+}
+
+.filters-parameters option {
+  border: none;
 }
 
 .nav-inner-list,
@@ -960,12 +960,13 @@ a {
 
 .filters fieldset {
   padding: 0;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 14px 0 0 0;
   border: none;
 }
 
-.filters legend {
+.filters-name {
+  display: inline-block;
+  margin-bottom: 7px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -984,12 +985,7 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 869px;
-}
-
-.filters-fat-list {
-  width: 425px;
-  margin: 0;
-  padding: 0;
+  align-items: flex-end;
 }
 
 .filters-type-list {
@@ -1000,18 +996,149 @@ a {
   padding: 0;
 }
 
-.filters-price {
-  width: 218px;
+.filters-sort {
+  box-sizing: border-box;
+  width: 196px;
+  cursor: pointer;
+}
+
+.filters-sort select {
+  box-sizing: border-box;
+  width: 190px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  border-style: none;
+  outline: 0;
+  color: var(--basic-white);
+  padding: 0 13px 0 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  cursor: pointer;
+}
+
+.filters-sort::after {
+  content: "";
+  position: absolute;
+  margin: 12px -24px;
+  width: 11px;
+  height: 11px;
+  box-sizing: border-box;
+  background-image: url("../img/main/arrow-down.svg");
+  background-repeat: no-repeat;
+}
+
+.filters-sort option {
+  color: #323232;
+  padding: 8px 20px 3px 20px;
+}
+
+.filters-sort option:hover {
+  color: var(--basic-white);
+  background-color: #1e90ff;
+}
+
+.filters-name-price {
+  display: inline-block;
+}
+
+.filters-price-slider {
   margin: 0;
   padding: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 218px;
+  height: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/main/price-slider.svg");
 }
 
 .filters-fat-list {
   display: flex;
   justify-content: space-between;
-  width: 425px;
+  padding: 7px 17px 7px 14px;
   margin: 0;
-  padding: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  width: 425px;
+  box-sizing: border-box;
+}
+
+.filters-type-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 19px;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  width: 711px;
+  box-sizing: border-box;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-radio {
+  padding-left: 35px;
+}
+
+.filter-checkbox {
+  padding-left: 30px;
+}
+
+.filter-checkbox-input + label::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  bottom: -1px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  border-color: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+}
+
+.filter-checkbox-input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -32px;
+  width: 24px;
+  height: 20px;
+  background-image: url("../img/main/checkbox-on.svg");
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.filter-radio-input + label::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: -2px;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  border: 3px solid;
+  border-color: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+}
+
+.filter-radio-input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 7.92px;
+  height: 7.92px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
 }
 
 .btn-filters {
@@ -1020,11 +1147,18 @@ a {
   border-color: var(--basic-white);
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  padding: 14px 29px;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
+  width: 144px;
+  height: 36px;
+}
+
+.btn-filters:hover {
+  background-color: var(--basic-white);
+  color: var(--basic-сharcoal);
+  cursor: pointer;
 }
 
 .pagination {
