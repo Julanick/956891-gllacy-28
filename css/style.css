@@ -43,9 +43,6 @@ a {
 
 .contact iframe {
   border: none;
-  position: absolute;
-  z-index: 1;
-  height: 430px;
 }
 
 .visually-hidden {
@@ -178,10 +175,6 @@ a {
 
 .filters-sort:hover + .filters-parameters {
   display: block;
-}
-
-.filters-parameters option {
-  border: none;
 }
 
 .nav-inner-list,
@@ -894,6 +887,7 @@ a {
 }
 
 .contact {
+  position: relative;
   display: block;
   width: 100%;
   margin-bottom: 14px;
@@ -902,27 +896,26 @@ a {
   background-position: center;
   background-size: cover;
   margin-top: 40px;
+  height: 430px;
 }
 
 .contact-inner {
-  padding: 62px 0 62px 843px;
-  height: 430px;
-  z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 62px calc((100% - 1146px)/2);
 }
 
 .contact-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
   box-sizing: border-box;
   background-color: var(--basic-white);
   width: 303px;
   height: 306px;
   border-radius: 16px;
-  margin: 0;
   padding: 32px 25px;
-  z-index: 5;
 }
 
 .contact-info-title {
@@ -933,7 +926,7 @@ a {
   margin: 0;
 }
 
-.contact-info-subtitle {
+.contact-item-value{
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
@@ -972,10 +965,15 @@ a {
 }
 
 .filters-parameter {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
+  border: none;
 }
 
 .filters {
@@ -1076,13 +1074,6 @@ a {
   box-sizing: border-box;
 }
 
-.filter-option label {
-  position: relative;
-  display: block;
-  cursor: pointer;
-  user-select: none;
-}
-
 .filter-radio {
   padding-left: 35px;
 }
@@ -1165,13 +1156,6 @@ a {
 }
 
 .pagination-item  {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  color: inherit;
-}
-
-.pagination-item {
   display: inline-block;
   text-align: center;
   border-radius: 50%;
@@ -1179,6 +1163,10 @@ a {
   height: 26px;
   line-height: 26px;
   color: var(--basic-white);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: inherit;
 }
 
 .pagination-item:hover {
