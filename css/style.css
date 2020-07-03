@@ -43,6 +43,9 @@ a {
 
 .contact iframe {
   border: none;
+  position: absolute;
+  z-index: 1;
+  height: 430px;
 }
 
 .visually-hidden {
@@ -877,38 +880,41 @@ a {
   justify-content: space-between;
 }
 
-.catalog-item-hit {
-  background-image: url(../img/main/products/hit/hit.png);
-  background-color: var(--basic-white);
-  background-repeat: no-repeat;
+.catalog-item-hit::before {
+  content: "";
+  display: block;
+  position: absolute;
   border: none;
   border-radius: 50%;
   width: 61px;
   height: 61px;
+  background-image: url(../img/main/products/hit/hit.png);
+  background-color: var(--basic-white);
+  background-repeat: no-repeat;
 }
 
 .contact {
+  display: block;
   width: 100%;
-  margin-top: -430px;
   margin-bottom: 14px;
+  background-image: url(../img/main/map-adress.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 40px;
 }
 
 .contact-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 62px 0;
-  bottom: -445px;
-  position: relative;
-}
-
-.contact-inner * {
+  padding: 62px 0 62px 843px;
+  height: 430px;
   z-index: 2;
 }
 
 .contact-info {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
   box-sizing: border-box;
   background-color: var(--basic-white);
   width: 303px;
@@ -916,38 +922,30 @@ a {
   border-radius: 16px;
   margin: 0;
   padding: 32px 25px;
+  z-index: 5;
 }
 
-.contact-info-headquoter {
+.contact-info-title {
   font-size: 14px;
   line-height: 20px;
   color: var(--basic-сharcoal);
+  padding: 0;
   margin: 0;
 }
-.contact-info-adress {
+
+.contact-info-subtitle {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-сharcoal);
-  margin: 0 0 22px 0;
+  margin: 0 0 30px 0;
 }
-.contact-order-phone {
-  font-size: 14px;
-  line-height: 20px;
-  color: var(--basic-сharcoal);
-  margin: 0 0 2px 0;
-}
-.contact-phone-number {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
-  color: var(--basic-сharcoal);
-}
+
 .contact-schedule {
   font-size: 14px;
   line-height: 20px;
   color: var(--basic-сharcoal);
-  margin: 0 0 22px 0;
+  margin: 0;
 }
 
 .btn-contact {
@@ -1166,7 +1164,7 @@ a {
   justify-content: flex-end;
 }
 
-.pagination-item a {
+.pagination-item  {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -1174,16 +1172,21 @@ a {
 }
 
 .pagination-item {
-  display: flex;
-  align-items: center;
+  display: inline-block;
+  text-align: center;
   border-radius: 50%;
   width: 26px;
   height: 26px;
-  justify-content: center;
+  line-height: 26px;
   color: var(--basic-white);
 }
 
 .pagination-item:hover {
+  background-color: var(--basic-white);
+  color: black;
+}
+
+.selected{
   background-color: var(--basic-white);
   color: black;
 }
