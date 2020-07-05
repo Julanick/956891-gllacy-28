@@ -44,7 +44,7 @@ body {
   background-position: top center;
 }
 
-main {
+.main {
   display: flex;
   flex-direction: column;
 }
@@ -926,16 +926,12 @@ a {
   height: 430px;
 }
 
-.contact-wrapper {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
 .contact-inner {
   display: flex;
   flex-direction: row-reverse;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .contact-info {
