@@ -909,11 +909,16 @@ a {
   height: 430px;
 }
 
-.contact-inner {
+.contact-wrapper {
   position: absolute;
-  right: 0;
+  width: 100%;
+  padding: 62px 0;
   top: 0;
-  padding: 62px calc((100% - 1146px)/2);
+}
+
+.contact-inner{
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .contact-info {
