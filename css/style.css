@@ -44,6 +44,10 @@ body {
   background-position: top center;
 }
 
+form {
+  z-index: 1;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -146,6 +150,7 @@ a {
 
 .catalog-item:hover .btn-ice {
   display: inline-block;
+  vertical-align: top;
 }
 
 .catalog-item:hover {
@@ -363,7 +368,6 @@ a {
   line-height: 16px;
   align-self: flex-end;
   width: 172px;
-  height: 44px;
   padding: 13px 15px;
   color: var(--basic-white);
   border-radius: 26px;
@@ -438,7 +442,7 @@ a {
   font-size: 15px;
   font-weight: bold;
   line-height: 16px;
-  padding: 18px 0;
+  padding: 15px 0 16px 0;
   text-align: right;
   color: var(--basic-сharcoal);
   border-top: 1px solid #cacac7;
@@ -615,7 +619,6 @@ a {
   text-align: center;
   color: var(--basic-white);
   border: none;
-  border-radius: 70px;
   border-radius: 70px;
   background-image: linear-gradient(180deg, #f26843 0%, #e74a35 100%);
   text-shadow: 0 2px 5px var(--burgundy-shadow);
@@ -984,6 +987,7 @@ a {
   font-weight: 500;
   line-height: 16px;
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 7px;
   color: var(--basic-white);
 }
@@ -1034,6 +1038,9 @@ a {
   border-radius: 20px;
   outline: 0;
   background-color: var(--gray-filters);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .filters-sort::after {
@@ -1059,6 +1066,7 @@ a {
 
 .filters-name-price {
   display: inline-block;
+  vertical-align: top;
 }
 
 .filters-price-slider {
@@ -1182,6 +1190,7 @@ a {
   font-weight: 500;
   line-height: 26px;
   display: inline-block;
+  vertical-align: top;
   width: 26px;
   height: 26px;
   margin: 0 2px;
