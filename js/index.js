@@ -19,7 +19,7 @@ formFeedbackPopup &&
       evt.preventDefault();
       feedbackText.classList.add("modal-error");
     }
-    setTimeout(() => {
+    setTimeout(function () {
       feedbackName.classList.remove("modal-error");
       feedbackEmail.classList.remove("modal-error");
       feedbackText.classList.remove("modal-error");
@@ -118,7 +118,7 @@ loginForm &&
       evt.preventDefault();
       loginForm.classList.add("modal-error");
     }
-    setTimeout(() => {
+    setTimeout(function () {
       loginForm.classList.remove("modal-error");
     }, 600);
   });
@@ -132,7 +132,7 @@ subscriptionForm &&
       evt.preventDefault();
       subscriptionEmail.classList.add("modal-error");
     }
-    setTimeout(() => {
+    setTimeout(function () {
       subscriptionEmail.classList.remove("modal-error");
     }, 600);
   });
