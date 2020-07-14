@@ -1,7 +1,6 @@
 var buttonFeedback = document.querySelector(".btn-contact");
 var buttonClose = document.querySelector(".btn-feedback-close");
 var formFeedbackPopup = document.querySelector(".feedback-form-wrapper");
-var feedbackForm = document.querySelector(".feedback-form");
 var feedbackName = document.querySelector("#user-name");
 var feedbackEmail = document.querySelector("#user-email");
 var feedbackText = document.querySelector("#user-text");
